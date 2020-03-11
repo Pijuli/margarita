@@ -60,6 +60,11 @@ export default {
       type: [String, Number],
       default: '',
     },
+
+    autofocus: {
+      type: Boolean,
+      default: false,
+    },
   },
 
   data() {
@@ -94,6 +99,12 @@ export default {
     value(newValue) {
       this.lazyValue = newValue
     },
+  },
+
+  mount() {
+    if (this.autofocus) {
+      this.$el.querySelector('input').focus()
+    }
   },
 
   methods: {
