@@ -128,6 +128,12 @@ describe('Text', () => {
       expect(queryByText(slotText)).toBeInTheDocument()
     }
   )
+
+  /*   test('input has focus if autofocus is provided', () => {
+    const { input } = TextBuilder({ autofocus: true })
+
+    expect(input).toHaveFocus()
+  }) */
 })
 
 function TextBuilder(customProps, customParams) {
