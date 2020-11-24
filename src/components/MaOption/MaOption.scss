@@ -10,7 +10,6 @@
       }
 
       &:hover,
-      &:focus,
       &:checked {
         & ~ .description {
           border-color: get-color(pink);
